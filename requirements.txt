@@ -16,6 +16,6 @@ scipy
 Flask
 Flask-Cors
 pymongo==3.12.1  # MongoDB driver
-Flask-SQLAlchemy==2.6.0  # SQLAlchemy integration for Flask
+Flask-SQLAlchemy==2.5.1  # SQLAlchemy integration for Flask
 Flask-Migrate==3.0.1  # Flask extension for database migrations
 mysql-connector-python==8.0.28  # MySQL driver
