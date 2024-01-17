@@ -26,6 +26,31 @@ pip install -r requirements.txt
 pip install -r django-requirements.txt
 And frontend dependencies using: npm install
 
+Install Node.js:
+
+Visit the official Node.js website.
+Download the LTS version (recommended for most users) or the current version.
+Follow the installation instructions for your operating system.
+Verify Installation:
+
+Open a new terminal or command prompt.
+
+Run the following commands to check if Node.js and npm are installed:
+
+bash
+Copy code
+node -v
+npm -v
+These commands should display the installed Node.js and npm versions.
+
+Restart Your Terminal or Command Prompt:
+
+After installing Node.js, close and reopen your terminal or command prompt to make sure the changes take effect.
+Run npm Install Again:
+
+Navigate to your project directory in the terminal or command prompt.
+Run the npm install command again.
+
 
 ```
 
