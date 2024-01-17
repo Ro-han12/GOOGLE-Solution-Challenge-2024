@@ -1,7 +1,21 @@
 Flask
-Tensorflow
-Keras
-numpy
+tensorflow
 pandas 
-seaborn
+dvc
+notebook
+numpy
 matplotlib
+seaborn
+python-box==6.0.2
+pyYAML
+tqdm
+ensure==1.0.2
+joblib
+types-PyYAML
+scipy
+Flask
+Flask-Cors
+pymongo==3.12.1  # MongoDB driver
+Flask-SQLAlchemy==2.6.0  # SQLAlchemy integration for Flask
+Flask-Migrate==3.0.1  # Flask extension for database migrations
+mysql-connector-python==8.0.28  # MySQL driver
