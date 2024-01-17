@@ -1,1 +1,7 @@
 Flask
+Tensorflow
+Keras
+numpy
+pandas 
+seaborn
+matplotlib
