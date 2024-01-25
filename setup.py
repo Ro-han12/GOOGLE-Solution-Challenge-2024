@@ -7,9 +7,9 @@ with open("README.md", "r", encoding="utf-8") as f:
 __version__ = "0.0.0"
 
 REPO_NAME = "https://github.com/Ro-han12/GOOGLE-Solution-Challenge-2024.git"
-AUTHOR_USER_NAME = "Ro-han12","shreyas1455","rohith4088"
+AUTHOR_USER_NAME = "Ro-han12"
 SRC_REPO = "GoogleSolutionChallenge"
-AUTHOR_EMAIL = "rohannair2939@gmail.com","rohithjaya2939@gmail.com","shreyas.rajesh14@gmail.com"
+AUTHOR_EMAIL = "rohannair2939@gmail.com"
 
 
 setuptools.setup(
