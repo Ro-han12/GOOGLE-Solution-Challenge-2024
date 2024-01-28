@@ -1,4 +1,3 @@
-### Health Management APP
 from dotenv import load_dotenv
 
 load_dotenv() ## load all the environment variables
@@ -9,8 +8,6 @@ import google.generativeai as genai
 from PIL import Image
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-
-## Function to load Google Gemini Pro Vision API And get response
 
 def get_gemini_repsonse(input,image,prompt):
     model=genai.GenerativeModel('gemini-pro-vision')
@@ -33,8 +30,6 @@ def input_image_setup(uploaded_file):
     else:
         raise FileNotFoundError("No file uploaded")
     
-##initialize our streamlit app
-
 st.set_page_config(page_title="Consumer Awareness App")
 
 st.header("Consumer Awareness App")
@@ -61,9 +56,6 @@ You are an expert nutritionist where you need to see the food items from the ima
 
 
 """
-
-## If submit button is clicked
-
 if submit:
     image_data=input_image_setup(uploaded_file)
     response=get_gemini_repsonse(input_prompt,image_data,input)
