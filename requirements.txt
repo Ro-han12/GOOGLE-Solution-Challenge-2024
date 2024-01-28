@@ -32,3 +32,6 @@ chromadb
 pdf2image
 faiss-cpu
 langchain_google_genai
+ipython
+Wand
+opencv-python
