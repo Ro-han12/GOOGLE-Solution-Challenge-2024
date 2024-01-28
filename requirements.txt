@@ -22,3 +22,12 @@ mysql-connector-python==8.0.28  # MySQL driver
 paddlepaddle
 paddleocr
 pytesseract
+streamlit
+google-generativeai
+python-dotenv
+langchain
+PyPDF2
+chromadb
+pdf2image
+faiss-cpu
+langchain_google_genai
