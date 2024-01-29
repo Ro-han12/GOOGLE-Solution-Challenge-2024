@@ -35,3 +35,4 @@ def perform_ocr(image_path):
 
 if __name__ == '__main__':
     app.run(debug=True)
+# conda activate  /Users/rohithr/Desktop/GOOGLE-Solution-Challenge-2024/googlenv
