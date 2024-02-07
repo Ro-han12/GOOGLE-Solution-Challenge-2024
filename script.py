@@ -1,7 +1,7 @@
 ### Health Management APP
 from dotenv import load_dotenv
 
-load_dotenv() ## load all the environment variables
+load_dotenv() 
 
 import streamlit as st
 import os
@@ -10,7 +10,7 @@ from PIL import Image
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-## Function to load Google Gemini Pro Vision API And get response
+
 
 def get_gemini_repsonse(input,image,prompt):
     model=genai.GenerativeModel('gemini-pro-vision')
@@ -25,7 +25,7 @@ def input_image_setup(uploaded_file):
 
         image_parts = [
             {
-                "mime_type": uploaded_file.type,  # Get the mime type of the uploaded file
+                "mime_type": uploaded_file.type, #Multipurpose Internet Mail Extensions (MIME)
                 "data": bytes_data
             }
         ]
@@ -33,7 +33,7 @@ def input_image_setup(uploaded_file):
     else:
         raise FileNotFoundError("No file uploaded")
     
-##initialize our streamlit app
+
 
 st.set_page_config(page_title="Consumer Awareness App")
 
@@ -59,9 +59,6 @@ Item 2 - 150 calories\n...\n
 Additionally, you are also an expert in recognizing ingredients used in packaged food items. For each ingredient, you need to list its effect on human health and potential side effects  and the common terms of each ingrdient in the format mentioned above.\nPlease provide the required information based on the given food image.
 and also give an score out of 5 based on the ingreidents and thier overall effect on health
 """
-
-## If submit button is clicked
-
 if submit:
     image_data=input_image_setup(uploaded_file)
     response=get_gemini_repsonse(input_prompt,image_data,input)
