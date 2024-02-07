@@ -1,4 +1,5 @@
 import sqlite3
+from flask import Flask, render_template ,app,jsonify
 connection = sqlite3.connect("product.db")
 cursor = connection.cursor()
 #table_info = """ CREATE TABLE COSMETIC_PRODUCT(Label varchar(250),Brand varchar(255),Name varchar(255),Price int,Rank int, Ingredients varchar(255),Combination int,Dry int,Normal int,Oily int,Sensitive int)"""
