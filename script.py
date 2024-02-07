@@ -1,3 +1,4 @@
+### Health Management APP
 from dotenv import load_dotenv
 
 load_dotenv() ## load all the environment variables
@@ -8,6 +9,8 @@ import google.generativeai as genai
 from PIL import Image
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+
+## Function to load Google Gemini Pro Vision API And get response
 
 def get_gemini_repsonse(input,image,prompt):
     model=genai.GenerativeModel('gemini-pro-vision')
@@ -30,10 +33,12 @@ def input_image_setup(uploaded_file):
     else:
         raise FileNotFoundError("No file uploaded")
     
+##initialize our streamlit app
+
 st.set_page_config(page_title="Consumer Awareness App")
 
 st.header("Consumer Awareness App")
-input=st.text_input("Input Prompt: ",key="input")
+input=st.text_input("wish to know something else? ",key="input")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 image=""   
 if uploaded_file is not None:
@@ -44,18 +49,19 @@ if uploaded_file is not None:
 submit=st.button("Sumbit to get calorie information and interdient descrpition")
 
 input_prompt="""
-You are an expert nutritionist where you need to see the food items from the image
-               and calculate the total calories, also provide the details of every food items with calories intake
-               is below format
-
-               1. Item 1 - no of calories
-               2. Item 2 - no of calories
-               ----
-               ----
-               you are also an expert in recognising the ingredients used in packaged food items where you need to list every ingreident used in the food product and give its effect on the human health and potential side effects of each ingredient in the format as mentioned above
-
-
+As an expert nutritionist, 
+your task is to analyze a food image and provide the following information in the specified format:
+\n1.Calculate the total calories of the food items.
+\n2.Provide details of each food item with their respective calorie intake.
+\nExample format: 
+Item 1 - 100 calories
+Item 2 - 150 calories\n...\n
+Additionally, you are also an expert in recognizing ingredients used in packaged food items. For each ingredient, you need to list its effect on human health and potential side effects  and the common terms of each ingrdient in the format mentioned above.\nPlease provide the required information based on the given food image.
+and also give an score out of 5 based on the ingreidents and thier overall effect on health
 """
+
+## If submit button is clicked
+
 if submit:
     image_data=input_image_setup(uploaded_file)
     response=get_gemini_repsonse(input_prompt,image_data,input)
