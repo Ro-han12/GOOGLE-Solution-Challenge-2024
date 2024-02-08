@@ -65,3 +65,4 @@ if submit:
     st.subheader("The Response is")
     st.write(response)
 
+ #conda  create -p  googlenv python==3.10  
