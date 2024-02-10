@@ -1,7 +1,9 @@
 Flask
+scikit-learn
 tensorflow
 pandas 
 dvc
+nltk
 notebook
 numpy
 matplotlib
