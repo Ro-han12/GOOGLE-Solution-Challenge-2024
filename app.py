@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 from PIL import Image
 import pytesseract
+import sqlite3
 app = Flask(__name__,static_url_path='/static')
 
 @app.route('/')
@@ -33,7 +34,25 @@ def perform_ocr(image_path):
     extracted_text = pytesseract.image_to_string(image)
     return extracted_text
 
+@app.route('/',methods = ['POST'])
+def database_search(ingredient):
+    conn = sqlite3.connect("product.db")
+    cur = conn.cursor()
+    fetch = cur.execute("SELECT NAME,BRAND FROM cosmetic_product WHERE Ingredients LIKE ?", ('%' + ingredient + '%',))
+    rows = fetch.fetchall()
+    cur.close()
+    return rows
+ingredient = input("Enter the ingredient to search for: ")
+results = database_search(ingredient)
 
+if results:
+    print("Results found:")
+    for name,brand in results:
+       print(f'{name}:{brand}')
+    else:
+        print("No results found.")
+
+                         
 if __name__ == '__main__':
     app.run(debug=True)
 # conda activate  /Users/rohithr/Desktop/GOOGLE-Solution-Challenge-2024/googlenv

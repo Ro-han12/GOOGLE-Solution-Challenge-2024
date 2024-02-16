@@ -18,7 +18,7 @@ def search_by_ingredient(ingredient):
     rows = c.fetchall()
     conn.close()
 
-    return rows
+    return list(rows)
 
 if __name__ == "__main__":
     ingredient = input("Enter the ingredient to search for: ")
