@@ -4,7 +4,7 @@ import pytesseract
 import sqlite3
 import streamlit as st
 import pickle
-import pandas as pd
+import pandas as pd 
 
 app = Flask(__name__, static_url_path='/static')
 
