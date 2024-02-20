@@ -144,6 +144,20 @@ def gemino_response_interface():
 def main():
     st.sidebar.title("Choose Functionality")
     option = st.sidebar.selectbox('Select:', ['TEXT EXTRACTOR', 'Product Recommendation', 'Search Ingrediants', 'FitTrack'])
+    st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://cdn.dribbble.com/users/76084/screenshots/1460059/blossom-landing-ani-2x.gif")
+    }
+   .sidebar .sidebar-content {
+        background: url("https://cdn.dribbble.com/users/76084/screenshots/1460059/blossom-landing-ani-2x.gif")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+    )
+    
 
     if option == 'TEXT EXTRACTOR':
         ocr_interface()
@@ -156,3 +170,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
