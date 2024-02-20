@@ -5,6 +5,11 @@ import sqlite3
 import streamlit as st
 import pickle
 import pandas as pd 
+from dotenv import load_dotenv
+load_dotenv() 
+import streamlit as st
+import os
+import google.generativeai as genai
 
 app = Flask(__name__, static_url_path='/static')
 
