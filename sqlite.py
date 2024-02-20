@@ -8,7 +8,7 @@ cursor = connection.cursor()
 
 #/Users/rohithr/.vscode/extensions/yy0931.vscode-sqlite3-editor-1.0.171/bin/sqlite3-editor-darwin-arm64 import --database-filepath '/Users/rohithr/Desktop/GOOGLE-Solution-Challenge-2024/product.db' --format csv --table-name 'COSMETIC_PRODUCT' --input-file /Users/rohithr/Desktop/GOOGLE-Solution-Challenge-2024/datasets/cosmetics.csv
 
-import sqlite3
+import sqlite3 
 
 def search_by_ingredient(ingredient):
     # Connect to the SQLite database
