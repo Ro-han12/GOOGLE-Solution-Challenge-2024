@@ -282,7 +282,7 @@ def main():
         product_recommendation_interface()
     elif option == 'SQLite Search':
         sqlite_search_interface()
-    elif option == 'Gemino Response':
+    elif option == 'Gemini Response':
         gemino_response_interface()
 
 if __name__ == "__main__":
