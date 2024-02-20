@@ -36,3 +36,4 @@ langchain_google_genai
 ipython
 Wand
 opencv-python
+google-auth
