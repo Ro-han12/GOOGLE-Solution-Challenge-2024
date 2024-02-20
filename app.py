@@ -274,7 +274,7 @@ def gemino_response_interface():
 # Main function to call individual interfaces based on user choice
 def main():
     st.sidebar.title("Choose Functionality")
-    option = st.sidebar.selectbox('Select:', ['OCR', 'Product Recommendation', 'SQLite Search', 'Gemino Response'])
+    option = st.sidebar.selectbox('Select:', ['OCR', 'Product Recommendation', 'SQLite Search', 'Gemini Response'])
 
     if option == 'OCR':
         ocr_interface()
