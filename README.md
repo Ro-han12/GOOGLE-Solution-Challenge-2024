@@ -1,8 +1,6 @@
 # Scan&Carry
 
-<p align="center">
-    <img src="" alt="WhatsApp Image 2024-02-21 at 8 51 55 PM">
-</p>
+![WhatsApp Image 2024-02-21 at 8 51 55 PM (1)](https://github.com/Ro-han12/SCAN-AND-CARRY/assets/74166452/f282784f-dba1-410e-9da5-33c3449b39d1)
 
 ## "Empowering Your Health, One Ingredient at a Time!"
 
