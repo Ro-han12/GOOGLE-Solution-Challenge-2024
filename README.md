@@ -1,6 +1,6 @@
-![MasterHead()][WhatsApp Image 2024-02-21 at 8 51 55 PM](https://github.com/Ro-han12/SCAN-AND-CARRY/assets/74166452/134400a3-6a20-4ecc-91fe-b3cd8e352d10)
-
 # Scan&Carry
+
+![WhatsApp Image 2024-02-21 at 8 51 55 PM](https://github.com/Ro-han12/SCAN-AND-CARRY/assets/74166452/134400a3-6a20-4ecc-91fe-b3cd8e352d10)
 
 ## "Empowering Your Health, One Ingredient at a Time!"
 
