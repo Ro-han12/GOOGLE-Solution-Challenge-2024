@@ -1,7 +1,7 @@
 # Scan&Carry
 
 <p align="center">
-    <img src="https://example.com/image.jpg" alt="WhatsApp Image 2024-02-21 at 8 51 55 PM">
+    <img src="" alt="WhatsApp Image 2024-02-21 at 8 51 55 PM">
 </p>
 
 ## "Empowering Your Health, One Ingredient at a Time!"
