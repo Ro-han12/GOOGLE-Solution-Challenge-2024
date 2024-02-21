@@ -1,12 +1,15 @@
-![WhatsApp Image 2024-02-21 at 8 51 55 PM](https://github.com/Ro-han12/SCAN-AND-CARRY/assets/74166452/134400a3-6a20-4ecc-91fe-b3cd8e352d10)
+![MasterHead()][WhatsApp Image 2024-02-21 at 8 51 55 PM](https://github.com/Ro-han12/SCAN-AND-CARRY/assets/74166452/134400a3-6a20-4ecc-91fe-b3cd8e352d10)
 
 # Scan&Carry
+
 ## "Empowering Your Health, One Ingredient at a Time!"
+
 Scan&Carry is a web application that scans the text from product images, extracts the ingredients list, provides a description of the ingredients, and gives a health score based on the effect of the ingredients on health.
 
 ## Project Setup
 
 ### 1. Problem Statement
+
 Our Problem:
 
 In today's world, we are facing a multitude of ecological crises that threaten the health of our planet and its inhabitants. While adopting conservation habits is crucial, many of us wonder if individual actions alone will be sufficient to mitigate these pressing issues.
@@ -120,31 +123,35 @@ Our solution adopts a client-server architecture to develop the Sustainable Cons
 High-Level Components:
 
 1.Backend:
-   - Responsible for data processing, storage, and business logic.
-   - Manages user authentication, product information retrieval, and environmental impact analysis.
-   - Implements APIs to facilitate communication with the frontend and external services.
-   - Comprises three main modules:
-     - Gemini Pro Module: This module handles image recognition and content generation using Google's Generative AI model (Gemini Pro). It processes uploaded images to identify products and extract relevant information.
-     - OCR Module: The Optical Character Recognition (OCR) module performs text extraction from uploaded images. It converts images containing text into machine-readable data, facilitating further analysis.
-     - Recommendation Module: This module analyzes user preferences, product data, and environmental impact metrics to generate personalized product recommendations. It leverages machine learning algorithms to suggest sustainable alternatives to users.
 
-2. Frontend:
-   - Provides the user interface for the Sustainable Consumer Assistant Web-App.
-   - Enables users to upload product images for recognition, view sourcing and manufacturing details, and assess environmental impacts.
-   - Implements features for user engagement, such as community forums, educational resources, and gamification elements.
-   - Ensures a seamless and intuitive user experience across various devices and platforms.
-   - Comprises two main interfaces:
-     - Recommendation Interface: This interface displays recommended products based on user preferences and analysis of environmental impact. It presents users with sustainable alternatives to promote responsible consumption.
-     - OCR Extraction Interface: Allows users to extract text information from uploaded images using OCR technology. This feature enhances the accessibility of product information and facilitates informed decision-making.
+- Responsible for data processing, storage, and business logic.
+- Manages user authentication, product information retrieval, and environmental impact analysis.
+- Implements APIs to facilitate communication with the frontend and external services.
+- Comprises three main modules:
+- Gemini Pro Module: This module handles image recognition and content generation using Google's Generative AI model (Gemini Pro). It processes uploaded images to identify products and extract relevant information.
+- OCR Module: The Optical Character Recognition (OCR) module performs text extraction from uploaded images. It converts images containing text into machine-readable data, facilitating further analysis.
+- Recommendation Module: This module analyzes user preferences, product data, and environmental impact metrics to generate personalized product recommendations. It leverages machine learning algorithms to suggest sustainable alternatives to users.
+
+2.Frontend:
+
+- Provides the user interface for the Sustainable Consumer Assistant Web-App.
+- Enables users to upload product images for recognition, view sourcing and manufacturing details, and assess environmental impacts.
+- Implements features for user engagement, such as community forums, educational resources, and gamification elements.
+- Ensures a seamless and intuitive user experience across various devices and platforms.
+- Comprises two main interfaces:
+- Recommendation Interface: This interface displays recommended products based on user preferences and analysis of environmental impact. It presents users with sustainable alternatives to promote responsible consumption.
+- OCR Extraction Interface: Allows users to extract text information from uploaded images using OCR technology. This feature enhances the accessibility of product information and facilitates informed decision-making.
 
 Technologies, Programming Languages, and Tools Used:
 Backend:
+
 - Framework: Python is chosen for its simplicity, versatility, and extensive ecosystem of libraries and frameworks.
 - Database: SQLITE is utilized for its lightweight nature and ease of integration with Python applications.
 - APIs: RESTful APIs are implemented to enable seamless communication between the backend, frontend, and external services such as Gemini Pro Vision.
 - Data Processing: Python libraries such as Google's Generative AI and Pytesseract are employed for image recognition and OCR functionality, respectively.
 
 Frontend (Streamlit):
+
 - Streamlit:We leverage Streamlit, a Python library for building interactive web applications, to develop the frontend of our Sustainable Consumer Assistant App.
 - Python: Streamlit applications are developed using Python, allowing for rapid prototyping and easy integration with backend services.
 - HTML/CSS: Additional markup and styling are applied using HTML/CSS to customize the Streamlit interface and enhance the user experience.
@@ -176,6 +183,7 @@ Overall, the choice of these products and platforms was based on their suitabili
 -A moderate knowledge about streanlit is needed to get started with the application
 
 ## Clone
+
 git clone https://github.com/Ro-han12/SCAN-AND-CARRY.git
 
 ## Creating A Virtual Environment
@@ -187,6 +195,7 @@ conda create -p googlenv python==3.10
 pip install -r requirements.txt
 
 ## Setup
+
 To run the application,execute the following command:
 streamlit run app.py
 
