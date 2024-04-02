@@ -121,7 +121,7 @@ def gemino_response_interface():
     Item 2 - 150 calories\n...\n
     Additionally, you are also an expert in recognizing ingredients used in packaged food items. For each ingredient, you need to list its effect on human health and potential side effects and the common terms of each ingredient in the format mentioned above.
     \nPlease provide the required information based on the given food image.
-    and also give an score out of 5 based on the ingredients and their overall effect on health
+    and also give an score out of 5 based on the ingredients and their overall effect on health with the description to justify the score.
     """
     
     input_gemino = st.text_input("Wish to know something else? ", key="input_gemino")
